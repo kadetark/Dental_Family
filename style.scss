@@ -407,3 +407,30 @@ body {
         background: rgba(104, 108, 107, 1);
     } 
 }
+
+.reviews {
+    height: 697px;
+    background-image: url(img/reviews-background.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        color: rgba(103, 173, 161, 1);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: left;
+        padding-bottom: 24px;
+        padding-top: 140px;
+    }
+
+    &__content {
+        display: flex;
+        height: 310px;
+        width: 1120px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+    }
+}
