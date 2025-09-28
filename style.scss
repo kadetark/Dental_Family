@@ -207,6 +207,10 @@ body {
 .doctors {
     height: 919px;
     background: rgba(243, 243, 243, 1);
+    background-image: url(img/doctors-background.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__title {
         color: rgba(103, 173, 161, 1);
@@ -224,5 +228,87 @@ body {
         width: 1120px;
         justify-content: space-between;
         align-items: center;
+        gap: 47px;
+    }
+
+    &__slider {
+        height: 47px;
+        width: 47px;
+    }
+
+    &__people {
+        width: 932px;
+        height: 558px;
+        overflow: hidden;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__case {
+        width: 265px;
+        height: 538px;
+        box-sizing: border-box;
+        border: 1px solid rgba(238, 238, 238, 1);
+        border-radius: 12px;
+        box-shadow: 0px 4px 4px 0px rgba(56, 56, 56, 0.45);
+        display: flex;
+        flex-direction: column; 
+        gap: 12px;     
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+
+        &-down {
+            height: 156px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__photo {
+        border-radius: 12px;
+        width: 241px;
+        height: 346px;        
+    }
+
+    &__name-box {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+    }
+
+    &__name {
+        color: rgba(92, 92, 92, 1);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 125%;
+        text-align: center;
+        height: 44px;
+    }
+
+    &__speciality {
+        color: rgba(92, 92, 92, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 125%;
+        text-align: center;        
+    }
+
+    &__button {
+        color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: center;
+        border-radius: 16px;
+        background: rgba(103, 173, 161, 1);
+        display: flex;
+        width: 241px;
+        height: 52px;
+        justify-content: center;
+        align-items: center;         
     }
 }

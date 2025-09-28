@@ -193,6 +193,10 @@ body {
 .doctors {
   height: 919px;
   background: rgb(243, 243, 243);
+  background-image: url(img/doctors-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .doctors__title {
   color: rgb(103, 173, 161);
@@ -208,5 +212,78 @@ body {
   height: 558px;
   width: 1120px;
   justify-content: space-between;
+  align-items: center;
+  gap: 47px;
+}
+.doctors__slider {
+  height: 47px;
+  width: 47px;
+}
+.doctors__people {
+  width: 932px;
+  height: 558px;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+.doctors__case {
+  width: 265px;
+  height: 538px;
+  box-sizing: border-box;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px rgba(56, 56, 56, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.doctors__case-down {
+  height: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.doctors__photo {
+  border-radius: 12px;
+  width: 241px;
+  height: 346px;
+}
+.doctors__name-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.doctors__name {
+  color: rgb(92, 92, 92);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%;
+  text-align: center;
+  height: 44px;
+}
+.doctors__speciality {
+  color: rgb(92, 92, 92);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  text-align: center;
+}
+.doctors__button {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+  border-radius: 16px;
+  background: rgb(103, 173, 161);
+  display: flex;
+  width: 241px;
+  height: 52px;
+  justify-content: center;
   align-items: center;
 }/*# sourceMappingURL=style.css.map */
