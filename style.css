@@ -7,8 +7,12 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Helvetica", "Helvetica Rounded LT Std", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 .center {
@@ -286,4 +290,90 @@ body {
   height: 52px;
   justify-content: center;
   align-items: center;
+}
+
+.feedback {
+  height: 524px;
+  background-image: url(img/form-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback__title {
+  color: rgb(59, 118, 108);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 24px;
+  width: 802px;
+}
+.feedback__form {
+  width: 548px;
+  height: 344px;
+  border-radius: 16px;
+  background: rgb(243, 243, 243);
+}
+.feedback__text-top {
+  color: rgb(103, 173, 161);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+  padding-top: 32px;
+  margin-bottom: 12px;
+}
+.feedback__input {
+  width: 516px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 20px;
+  background: none;
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  padding-left: 12px;
+  font-family: inherit;
+  margin-bottom: 8px;
+  outline: none;
+  margin-left: 16px;
+}
+.feedback__input::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+.feedback__input::placeholder {
+  color: rgb(170, 170, 170);
+}
+.feedback__text-down {
+  color: rgb(103, 173, 161);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  width: 358px;
+  height: 36px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+.feedback__button {
+  width: 516px;
+  height: 52px;
+  border-radius: 16px;
+  border: none;
+  background: rgb(103, 173, 161);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.feedback__button:hover {
+  background: rgb(104, 108, 107);
 }/*# sourceMappingURL=style.css.map */

@@ -7,8 +7,12 @@ a {
     text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Helvetica', 'Helvetica Rounded LT Std', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .center {
@@ -311,4 +315,95 @@ body {
         justify-content: center;
         align-items: center;         
     }
+}
+
+.feedback {
+    height: 524px;
+    background-image: url(img/form-background.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        color: rgba(59, 118, 108, 1);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: left;
+        padding-top: 50px;
+        padding-bottom: 24px;
+        width: 802px;
+    }
+
+    &__form {
+        width: 548px;
+        height: 344px;
+        border-radius: 16px;
+        background:rgba(243, 243, 243, 1);        
+    }
+
+    &__text-top {
+        color:rgba(103, 173, 161, 1);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: center;
+        padding-top: 32px;
+        margin-bottom: 12px;
+    }
+
+    &__input {
+        width: 516px;
+        height: 60px;
+        box-sizing: border-box;
+        border: 1px solid rgba(235, 235, 235, 1);
+        border-radius: 20px;
+        background: none;
+        color: rgba(170, 170, 170, 1);        
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        padding-left: 12px;
+        font-family: inherit; 
+        margin-bottom: 8px; 
+        outline: none;
+        margin-left: 16px;      
+    }
+
+     &__input::placeholder {
+        color: rgba(170, 170, 170, 1);        
+    }
+
+    &__text-down {
+        color:rgba(103, 173, 161, 1);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        width: 358px;
+        height: 36px;
+        margin-bottom: 16px;
+        margin-left: 16px; 
+    }
+
+    &__button {
+        width: 516px;
+        height: 52px;
+        border-radius: 16px;
+        border: none;
+        background: rgba(103, 173, 161, 1);
+        color: rgba(255, 255, 255, 1);
+        font-family: inherit;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: center;
+        margin-left: 16px; 
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background: rgba(104, 108, 107, 1);
+    } 
 }
