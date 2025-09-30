@@ -14,7 +14,7 @@
         <header class="header">
             <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>            
             <nav class="menu">
-                <a class="menu-link" href="index.html">Главная</a>
+                <a class="menu-link menu-link_now" href="index.html">Главная</a>
                 <a class="menu-link" href="#">Услуги</a>
                 <a class="menu-link" href="#">Детская стоматология</a>
                 <a class="menu-link" href="#">Специалисты</a>
@@ -22,9 +22,16 @@
             </nav>
         </header>
         <section class="top__content">
-            <h1 class="title">Дентал Фэмили  — где лечатся всей семьёй</h1>
-            <p class="description">Заботимся о вашей улыбке с теплом и профессионализмом.</p>            
-            <a class="top-button" href="#sign_up">Записаться <img src="img/button-top.svg" alt="Кнопка записаться"></a>
+            <div class="top__content-box">
+                <div class="top__left">
+                    <h1 class="top__title">Дентал Фэмили  — где лечатся всей семьёй</h1>
+                    <p class="top__description">Заботимся о вашей улыбке с теплом и профессионализмом.</p>            
+                    <a class="top__button" href="#sign_up">Записаться <img src="img/button-top.svg" alt="Кнопка записаться"></a>
+                </div>
+                <div class="top__right">
+                    <img class="top__img" src="img/top_img.svg" alt="счастливая семья">
+                </div>
+            </div>            
         </section>        
     </div>
     <div class="tags center">
@@ -129,17 +136,41 @@
     <div class="reviews center">
         <h2 class="reviews__title">Отзывы пациентов</h2>
         <div class="reviews__content">
-            <img class="reviews__slider doctors__slider" src="img/doc_slider-back.png" alt="кнопка назад">
+            <img class="reviews__slider" src="img/doc_slider-back.png" alt="кнопка назад">
             <div class="reviews__clients">
                 <div class="reviews__case">                    
-                                
+                    <p class="reviews__name">Алексей</p>  
+                    <p class="reviews__service">Услуга: лечение кариеса </p>
+                    <p class="reviews__text">Начну так: отличная клиника 1.  Семейная, есть все для детей и взрослых, ожидание приятно с PS5 2. Приятные врчаи, все подробно расскажут, найдут путь и подходы. 3. Хорошая обратная связь от администраторов.</p>
+                    <p class="reviews__date">25 апреля 2024 г.</p>              
                 </div>
                 <div class="reviews__case">
-                    
+                    <p class="reviews__name">Мария</p>                
+                    <p class="reviews__service">Услуга: удаление зуба</p>
+                    <p class="reviews__text">Отличная клиника. Все очень вежливые и приветливые. Отдельное спасибо доктору челюстно-лицевому хирургу Едомину Денису Сергеевичу. Удалил зуб быстро и безболезненно. Очень внимателен.</p>
+                    <p class="reviews__date">25 апреля 2024 г.</p>
                 </div>               
             </div>
-            <img class="reviews__slider doctors__slider" src="img/doc_slider-forward.png" alt="кнопка вперед">
+            <img class="reviews__slider" src="img/doc_slider-forward.png" alt="кнопка вперед">
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer__content center">
+            <div class="footer__contacts-box">
+                <div class="footer__contacts">
+                    <h2 class="footer__title">Контакты</h2>
+                    <div class="footer__address">
+                        <p class="footer__text">Адрес: г. Чита, ул. Новобульварная, д. 24</p>
+                        <p class="footer__text">Телефон: +7 (3022) 284-286</p>
+                        <p class="footer__text">График работы: ежедневно с 09:00 до 21:00</p>
+                    </div>
+                </div>
+                <div class="footer__sign-up">
+                    <a class="footer__button" href="#sign_up">Записаться <img src="img/button-top.svg" alt="Кнопка записаться"></a>
+                    <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам и ответит на все интересующие вопросы.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

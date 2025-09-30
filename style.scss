@@ -12,12 +12,12 @@ html {
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica', sans-serif;  
 }
 
 .center {
-  padding-left: calc(50% - 560px);
-  padding-right: calc(50% - 560px);
+  padding-left: calc(50% - 540px);
+  padding-right: calc(50% - 540px);
 }
 
 .top {
@@ -26,6 +26,36 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &__content-box {
+        width: 1120px;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        margin-top: 75px;
+    }
+
+    &__title {
+    width: 433px;
+    color: rgba(92, 92, 92, 1);    
+    font-size: 36px;
+    font-weight: 700;    
+    text-align: left;
+    margin-bottom: 12px;
+    }
+
+    &__description {
+    width: 433px;
+    color: rgba(92, 92, 92, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 36px;
+    } 
 }
 
 .header {
@@ -47,13 +77,13 @@ body {
         text-align: left;
     }
 
-    &-link:hover {
+    &-link:hover, &-link_now {
         color: rgba(103, 173, 161, 1);             
         font-weight: 700; 
         position: relative;   
     }
 
-    &-link:hover::after {
+    &-link:hover::after, &-link_now::after  {
         content: '';
         position: absolute;
         bottom: -8px;
@@ -66,30 +96,7 @@ body {
     }
 }
 
-.top__content {
-    margin-top: 75px;
-}
-
-.title {
-    width: 433px;
-    color: rgba(92, 92, 92, 1);    
-    font-size: 36px;
-    font-weight: 700;    
-    text-align: left;
-    margin-bottom: 12px;
-    }
-
-.description {
-    width: 433px;
-    color: rgba(92, 92, 92, 1);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    margin-bottom: 36px;
-} 
-
-.top-button {
+.top__button, .footer__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +105,7 @@ body {
     height: 50px;    
     border-radius: 16px;
     background: rgba(103, 173, 161, 1);
-    color: var(--Background, rgba(243, 243, 243, 1));
+    color: rgba(243, 243, 243, 1);
     font-family: Arial;
     font-size: 16px;
     font-weight: 700;
@@ -111,10 +118,10 @@ body {
     flex-direction: column;
     gap: 24px;
     background: rgba(243, 243, 243, 1);
-    background-image: url(img/tags-background.png);
+    background-image: url(img/tags-background3.png);
     background-position:center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
 
     &__title {
         height: 50px;
@@ -209,7 +216,7 @@ body {
 }
 
 .doctors {
-    height: 919px;
+    height: 832px;
     background: rgba(243, 243, 243, 1);
     background-image: url(img/doctors-background.png);
     background-position:center;
@@ -223,7 +230,7 @@ body {
         line-height: 100%;
         text-align: left;
         padding-bottom: 24px;
-        padding-top: 168px;
+        padding-top: 100px;
     }
 
     &__content {
@@ -432,5 +439,114 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 48px;
+    }
+
+    &__slider {
+        height: 47px;
+        width: 47px;
+    }
+
+    &__clients {
+        display: flex;
+        gap: 20px;
+        width: 930px;
+        height: 310px;
+    }
+
+    &__case {
+        width: 455px;
+        height: 310px;
+        background: #67ADA1;
+        border-radius: 12px;
+        padding-left: 20px;
+        padding-right: 20px;        
+        position: relative;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        color: #F3F3F3;
+        margin-top: 40px;
+    }
+
+    &__service, &__text, &__date {
+        color: #F3F3F3;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__text, &__date {
+        font-weight: 400;
+    }
+
+    &__name, &__service {
+        margin-bottom: 12px;
+    }
+
+    &__date {
+        position: absolute; 
+        bottom: 40px;
+    }
+}
+
+.footer{
+    &__content {
+        height: 401px;
+        background-image: url( img/footer-background.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__contacts-box {
+        display: flex;
+        padding-top: 40px;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        width: 335px;
+        height: 128px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        color: #F3F3F3;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #F3F3F3;
+        width: 360px;
+    }
+
+    &__sign-up {
+        width: 360px;
+        height: 109px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+    }
+
+    &__button {
+        color: #67ADA1;
+        background-color: #F3F3F3;  
     }
 }

@@ -16,8 +16,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 560px);
-  padding-right: calc(50% - 560px);
+  padding-left: calc(50% - 540px);
+  padding-right: calc(50% - 540px);
 }
 
 .top {
@@ -26,6 +26,32 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.top__content-box {
+  width: 1120px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.top__left {
+  margin-top: 75px;
+}
+.top__title {
+  width: 433px;
+  color: rgb(92, 92, 92);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.top__description {
+  width: 433px;
+  color: rgb(92, 92, 92);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 36px;
 }
 
 .header {
@@ -47,12 +73,12 @@ body {
   line-height: 16px;
   text-align: left;
 }
-.menu-link:hover {
+.menu-link:hover, .menu-link_now {
   color: rgb(103, 173, 161);
   font-weight: 700;
   position: relative;
 }
-.menu-link:hover::after {
+.menu-link:hover::after, .menu-link_now::after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -64,30 +90,7 @@ body {
   z-index: -1;
 }
 
-.top__content {
-  margin-top: 75px;
-}
-
-.title {
-  width: 433px;
-  color: rgb(92, 92, 92);
-  font-size: 36px;
-  font-weight: 700;
-  text-align: left;
-  margin-bottom: 12px;
-}
-
-.description {
-  width: 433px;
-  color: rgb(92, 92, 92);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  margin-bottom: 36px;
-}
-
-.top-button {
+.top__button, .footer__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +99,7 @@ body {
   height: 50px;
   border-radius: 16px;
   background: rgb(103, 173, 161);
-  color: var(--Background, rgb(243, 243, 243));
+  color: rgb(243, 243, 243);
   font-family: Arial;
   font-size: 16px;
   font-weight: 700;
@@ -109,10 +112,10 @@ body {
   flex-direction: column;
   gap: 24px;
   background: rgb(243, 243, 243);
-  background-image: url(img/tags-background.png);
+  background-image: url(img/tags-background3.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .tags__title {
   height: 50px;
@@ -195,7 +198,7 @@ body {
 }
 
 .doctors {
-  height: 919px;
+  height: 832px;
   background: rgb(243, 243, 243);
   background-image: url(img/doctors-background.png);
   background-position: center;
@@ -209,7 +212,7 @@ body {
   line-height: 100%;
   text-align: left;
   padding-bottom: 24px;
-  padding-top: 168px;
+  padding-top: 100px;
 }
 .doctors__content {
   display: flex;
@@ -401,4 +404,96 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 48px;
+}
+.reviews__slider {
+  height: 47px;
+  width: 47px;
+}
+.reviews__clients {
+  display: flex;
+  gap: 20px;
+  width: 930px;
+  height: 310px;
+}
+.reviews__case {
+  width: 455px;
+  height: 310px;
+  background: #67ADA1;
+  border-radius: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+.reviews__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #F3F3F3;
+  margin-top: 40px;
+}
+.reviews__service, .reviews__text, .reviews__date {
+  color: #F3F3F3;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+}
+.reviews__text, .reviews__date {
+  font-weight: 400;
+}
+.reviews__name, .reviews__service {
+  margin-bottom: 12px;
+}
+.reviews__date {
+  position: absolute;
+  bottom: 40px;
+}
+
+.footer__content {
+  height: 401px;
+  background-image: url(img/footer-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__contacts-box {
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+.footer__contacts {
+  width: 335px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #F3F3F3;
+}
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #F3F3F3;
+  width: 360px;
+}
+.footer__sign-up {
+  width: 360px;
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 11px;
+}
+.footer__button {
+  color: #67ADA1;
+  background-color: #F3F3F3;
 }/*# sourceMappingURL=style.css.map */
