@@ -183,7 +183,7 @@ body {
   color: rgb(243, 243, 243);
   font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 135%;
   text-align: left;
 }
 .about-us__img-box {
@@ -464,12 +464,18 @@ body {
   bottom: 40px;
 }
 
+.footer {
+  height: 425px;
+}
 .footer__content {
   height: 401px;
-  background-image: url(img/footer-background.png);
-  background-position: center;
+  background-image: url(img/footer-background2.png);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
 }
 .footer__contacts-box {
   display: flex;
@@ -512,4 +518,30 @@ body {
 .footer__button {
   color: #67ADA1;
   background-color: #F3F3F3;
+}
+.footer__name-clinic {
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.footer__name-big {
+  color: #F3F3F3;
+  font-family: "Marck Script";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 150%;
+  display: block;
+}
+.footer__name-small {
+  color: #F3F3F3;
+  font-family: "Marck Script";
+  display: block;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 150%;
+  position: absolute;
+  bottom: 0;
+  left: 266px;
 }/*# sourceMappingURL=style.css.map */

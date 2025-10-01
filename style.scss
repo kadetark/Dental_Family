@@ -198,7 +198,7 @@ body {
         color: rgba(243, 243, 243, 1);
         font-size: 16px;
         font-weight: 400;
-        line-height: 21px;
+        line-height: 135%;
         text-align: left;
     }
 
@@ -515,12 +515,17 @@ body {
 }
 
 .footer{
+    height: 425px;
+    
     &__content {
         height: 401px;
-        background-image: url( img/footer-background.png);
-        background-position:center;
+        background-image: url( img/footer-background2.png);
+        background-position:top;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
     }
 
     &__contacts-box {
@@ -570,5 +575,34 @@ body {
     &__button {
         color: #67ADA1;
         background-color: #F3F3F3;  
+    }
+
+    &__name-clinic {
+        height: 192px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__name-big {
+        color:#F3F3F3;
+        font-family: "Marck Script";
+        font-size: 128px;
+        font-weight: 400;
+        line-height: 150%;
+        display: block;
+    }
+
+     &__name-small {
+        color:#F3F3F3;
+        font-family: "Marck Script";
+        display: block;  
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 150%;
+        position: absolute;
+        bottom: 0;
+        left: 266px;
     }
 }
