@@ -118,10 +118,10 @@ body {
     flex-direction: column;
     gap: 24px;
     background: rgba(243, 243, 243, 1);
-    background-image: url(img/tags-background3.png);
+    background-image: url(img/tags-background.png);
     background-position:center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: 100vw;
 
     &__title {
         height: 50px;
@@ -326,20 +326,42 @@ body {
 
 .feedback {
     height: 524px;
-    background-image: url(img/form-background.png);
+    background-image: url(img/form-background2.png);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+
+    &__content {
+        display: flex;
+        width: 1215px;
+
+        &-left {
+            width: 739px;
+            height: 524px;
+        }  
+        
+        &-right {
+            width: 524px;
+            height: 524px;
+        }  
+    }
+
+    &__img {
+        height: 524px;
+    
+        
+    }
 
     &__title {
-        color: rgba(59, 118, 108, 1);
+        color: #f3f3f3;
         font-size: 24px;
         font-weight: 700;
         line-height: 100%;
         text-align: left;
-        padding-top: 50px;
-        padding-bottom: 24px;
-        width: 802px;
+        padding-top: 41px;
+        padding-bottom: 32px;
+        width: 633px;
     }
 
     &__form {
