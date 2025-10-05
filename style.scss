@@ -8,16 +8,16 @@ a {
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;  
+    font-family: 'Helvetica', sans-serif;
 }
 
 .center {
-  padding-left: calc(50% - 540px);
-  padding-right: calc(50% - 540px);
+    padding-left: calc(50% - 540px);
+    padding-right: calc(50% - 540px);
 }
 
 .top {
@@ -39,23 +39,23 @@ body {
     }
 
     &__title {
-    width: 433px;
-    color: rgba(92, 92, 92, 1);    
-    font-size: 36px;
-    font-weight: 700;    
-    text-align: left;
-    margin-bottom: 12px;
+        width: 433px;
+        color: rgba(92, 92, 92, 1);
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 12px;
     }
 
     &__description {
-    width: 433px;
-    color: rgba(92, 92, 92, 1);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    margin-bottom: 36px;
-    } 
+        width: 433px;
+        color: rgba(92, 92, 92, 1);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 36px;
+    }
 }
 
 .header {
@@ -67,23 +67,29 @@ body {
 .menu {
     display: flex;
     gap: 28px;
+    align-items: flex-start;
     padding-left: 61px;
 
-    &-link{
-        color: rgba(92, 92, 92, 1);font-family: Helvetica;
+    &-link {
+        color: rgba(92, 92, 92, 1);
         font-size: 16px;
         font-weight: 400;
-        line-height: 16px;        
+        line-height: 150%;
         text-align: left;
     }
 
-    &-link:hover, &-link_now {
-        color: rgba(103, 173, 161, 1);             
-        font-weight: 700; 
-        position: relative;   
+    &-link:hover,
+    &-link_now {
+        color: rgba(103, 173, 161, 1);
+        font-weight: 700;
+        position: relative;
     }
 
-    &-link:hover::after, &-link_now::after  {
+    // &-link_now {
+    //     line-height: normal;
+    // }
+
+    &-link_now::after  {
         content: '';
         position: absolute;
         bottom: -8px;
@@ -96,20 +102,21 @@ body {
     }
 }
 
-.top__button, .footer__button {
+.top__button,
+.footer__button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 154px;
-    height: 50px;    
+    height: 50px;
     border-radius: 16px;
     background: rgba(103, 173, 161, 1);
     color: rgba(243, 243, 243, 1);
     font-family: Arial;
     font-size: 16px;
     font-weight: 700;
-    text-align: left;       
+    text-align: left;
 }
 
 .tags {
@@ -119,7 +126,7 @@ body {
     gap: 24px;
     background: rgba(243, 243, 243, 1);
     background-image: url(img/tags-background.png);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw;
 
@@ -139,14 +146,14 @@ body {
     }
 
     &__img {
-        height: 75px;   
+        height: 75px;
         width: 75px;
     }
 
     &__description {
         display: flex;
         flex-direction: column;
-        gap: 8px;        
+        gap: 8px;
     }
 
     &__h3 {
@@ -171,13 +178,13 @@ body {
     height: 530px;
     background: var(--Brand, rgba(103, 173, 161, 1));
     background-image: url(img/about-us-background.png);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 
     &__title {
-        color:rgba(243, 243, 243, 1);
+        color: rgba(243, 243, 243, 1);
         font-family: Arial;
         font-size: 24.5px;
         font-weight: 700;
@@ -194,7 +201,7 @@ body {
     }
 
     &__text {
-        width: 550px;        
+        width: 550px;
         color: rgba(243, 243, 243, 1);
         font-size: 16px;
         font-weight: 400;
@@ -219,7 +226,7 @@ body {
     height: 832px;
     background: rgba(243, 243, 243, 1);
     background-image: url(img/doctors-background.png);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -263,8 +270,8 @@ body {
         border-radius: 12px;
         box-shadow: 0px 4px 4px 0px rgba(56, 56, 56, 0.45);
         display: flex;
-        flex-direction: column; 
-        gap: 12px;     
+        flex-direction: column;
+        gap: 12px;
         align-items: center;
         justify-content: center;
         padding: 12px;
@@ -281,7 +288,7 @@ body {
     &__photo {
         border-radius: 12px;
         width: 241px;
-        height: 346px;        
+        height: 346px;
     }
 
     &__name-box {
@@ -305,7 +312,7 @@ body {
         font-size: 16px;
         font-weight: 400;
         line-height: 125%;
-        text-align: center;        
+        text-align: center;
     }
 
     &__button {
@@ -320,37 +327,95 @@ body {
         width: 241px;
         height: 52px;
         justify-content: center;
-        align-items: center;         
+        align-items: center;
     }
 }
 
-.feedback {
-    height: 524px;
-    background-image: url(img/form-background2.png);
-    background-position:center;
+.sale {
+    background-image: url(img/sale-background.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+    
+    &__box {
+        height: 524px;
+        width: 1440px;
+        display: flex;        
+    }
 
-    &__content {
-        display: flex;
-        width: 1215px;
-
-        &-left {
-            width: 739px;
-            height: 524px;
-        }  
-        
-        &-right {
-            width: 524px;
-            height: 524px;
-        }  
+    &__img-box {
+        height: 524px;
+        width: 524px;  
     }
 
     &__img {
         height: 524px;
-    
-        
+    }
+
+    &__content {
+        width: 916px;
+        padding: 0px 24px 0px 48px;
+        position: relative;
+    }
+
+    &__title, &__description, &__condition {
+        color: #F3F3F3;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 175.5px;
+    }
+
+    &__description {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+    &__condition {
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 150%;
+    }
+
+    &__svg {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+    }
+}
+
+.feedback {
+    height: 524px;    
+    background-image: url(img/form-background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        display: flex;
+        width: 1440px;
+
+        &-left {
+            width: 973px;
+            height: 524px;
+            padding-left: calc(50% - 540px);
+
+        }
+
+        &-right {
+            height: 524px;
+        }
+    }
+
+    &__img {
+        height: 524px;
     }
 
     &__title {
@@ -368,11 +433,11 @@ body {
         width: 548px;
         height: 344px;
         border-radius: 16px;
-        background:rgba(243, 243, 243, 1);        
+        background: rgba(243, 243, 243, 1);
     }
 
     &__text-top {
-        color:rgba(103, 173, 161, 1);
+        color: rgba(103, 173, 161, 1);
         font-size: 24px;
         font-weight: 700;
         line-height: 100%;
@@ -388,24 +453,24 @@ body {
         border: 1px solid rgba(235, 235, 235, 1);
         border-radius: 20px;
         background: none;
-        color: rgba(170, 170, 170, 1);        
+        color: rgba(170, 170, 170, 1);
         font-size: 16px;
         font-weight: 400;
         line-height: 16px;
         text-align: left;
         padding-left: 12px;
-        font-family: inherit; 
-        margin-bottom: 8px; 
+        font-family: inherit;
+        margin-bottom: 8px;
         outline: none;
-        margin-left: 16px;      
+        margin-left: 16px;
     }
 
-     &__input::placeholder {
-        color: rgba(170, 170, 170, 1);        
+    &__input::placeholder {
+        color: rgba(170, 170, 170, 1);
     }
 
     &__text-down {
-        color:rgba(103, 173, 161, 1);
+        color: rgba(103, 173, 161, 1);
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
@@ -413,7 +478,7 @@ body {
         width: 358px;
         height: 36px;
         margin-bottom: 16px;
-        margin-left: 16px; 
+        margin-left: 16px;
     }
 
     &__button {
@@ -428,19 +493,19 @@ body {
         font-weight: 700;
         line-height: 100%;
         text-align: center;
-        margin-left: 16px; 
+        margin-left: 16px;
         cursor: pointer;
     }
 
     &__button:hover {
         background: rgba(104, 108, 107, 1);
-    } 
+    }
 }
 
 .reviews {
     height: 697px;
     background-image: url(img/reviews-background.png);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -481,7 +546,7 @@ body {
         background: #67ADA1;
         border-radius: 12px;
         padding-left: 20px;
-        padding-right: 20px;        
+        padding-right: 20px;
         position: relative;
     }
 
@@ -493,34 +558,38 @@ body {
         margin-top: 40px;
     }
 
-    &__service, &__text, &__date {
+    &__service,
+    &__text,
+    &__date {
         color: #F3F3F3;
         font-weight: bold;
         font-size: 16px;
         line-height: 150%;
     }
 
-    &__text, &__date {
+    &__text,
+    &__date {
         font-weight: 400;
     }
 
-    &__name, &__service {
+    &__name,
+    &__service {
         margin-bottom: 12px;
     }
 
     &__date {
-        position: absolute; 
+        position: absolute;
         bottom: 40px;
     }
 }
 
-.footer{
+.footer {
     height: 425px;
-    
+
     &__content {
         height: 401px;
-        background-image: url( img/footer-background2.png);
-        background-position:top;
+        background-image: url(img/footer-background2.png);
+        background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -574,7 +643,7 @@ body {
 
     &__button {
         color: #67ADA1;
-        background-color: #F3F3F3;  
+        background-color: #F3F3F3;
     }
 
     &__name-clinic {
@@ -586,7 +655,7 @@ body {
     }
 
     &__name-big {
-        color:#F3F3F3;
+        color: #F3F3F3;
         font-family: "Marck Script";
         font-size: 128px;
         font-weight: 400;
@@ -594,15 +663,29 @@ body {
         display: block;
     }
 
-     &__name-small {
-        color:#F3F3F3;
+    &__name-small {
+        color: #F3F3F3;
         font-family: "Marck Script";
-        display: block;  
+        display: block;
         font-size: 40px;
         font-weight: 400;
         line-height: 150%;
         position: absolute;
         bottom: 0;
         left: 266px;
+    }
+
+    &__nav {
+        height: 24px;
+        display: flex;
+        gap: 28px;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        color: #67ADA1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
     }
 }

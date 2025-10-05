@@ -63,14 +63,14 @@ body {
 .menu {
   display: flex;
   gap: 28px;
+  align-items: flex-start;
   padding-left: 61px;
 }
 .menu-link {
   color: rgb(92, 92, 92);
-  font-family: Helvetica;
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 150%;
   text-align: left;
 }
 .menu-link:hover, .menu-link_now {
@@ -78,7 +78,7 @@ body {
   font-weight: 700;
   position: relative;
 }
-.menu-link:hover::after, .menu-link_now::after {
+.menu-link_now::after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -90,7 +90,8 @@ body {
   z-index: -1;
 }
 
-.top__button, .footer__button {
+.top__button,
+.footer__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,6 +296,55 @@ body {
   align-items: center;
 }
 
+.sale {
+  background-image: url(img/sale-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.sale__box {
+  height: 524px;
+  width: 1440px;
+  display: flex;
+}
+.sale__img-box {
+  height: 524px;
+  width: 524px;
+}
+.sale__img {
+  height: 524px;
+}
+.sale__content {
+  width: 916px;
+  padding: 0px 24px 0px 48px;
+  position: relative;
+}
+.sale__title, .sale__description, .sale__condition {
+  color: #F3F3F3;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 175.5px;
+}
+.sale__description {
+  font-size: 24px;
+  margin-top: 24px;
+}
+.sale__condition {
+  font-size: 16px;
+  margin-top: 12px;
+  line-height: 150%;
+}
+.sale__svg {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+}
+
 .feedback {
   height: 524px;
   background-image: url(img/form-background2.png);
@@ -302,17 +352,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .feedback__content {
   display: flex;
-  width: 1215px;
+  width: 1440px;
 }
 .feedback__content-left {
-  width: 739px;
+  width: 973px;
   height: 524px;
+  padding-left: calc(50% - 540px);
 }
 .feedback__content-right {
-  width: 524px;
   height: 524px;
 }
 .feedback__img {
@@ -544,4 +596,16 @@ body {
   position: absolute;
   bottom: 0;
   left: 266px;
+}
+.footer__nav {
+  height: 24px;
+  display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+}
+.footer__link {
+  color: #67ADA1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
 }/*# sourceMappingURL=style.css.map */
