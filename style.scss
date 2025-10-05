@@ -82,14 +82,13 @@ body {
     &-link_now {
         color: rgba(103, 173, 161, 1);
         font-weight: 700;
+    }
+    
+    &-link_now {
         position: relative;
     }
 
-    // &-link_now {
-    //     line-height: normal;
-    // }
-
-    &-link_now::after  {
+    &-link_now::after {
         content: '';
         position: absolute;
         bottom: -8px;
@@ -98,7 +97,6 @@ body {
         height: 4px;
         background-color: rgba(103, 173, 161, 1);
         border-radius: 16px;
-        z-index: -1;
     }
 }
 
@@ -230,6 +228,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    &_doc-page {
+        height: 1507px;
+        background-image: url(img/doctors-background-doc-page.png);
+        background-size: cover;
+    }
+
     &__title {
         color: rgba(103, 173, 161, 1);
         font-size: 36px;
@@ -238,6 +242,10 @@ body {
         text-align: left;
         padding-bottom: 24px;
         padding-top: 100px;
+
+        &_doc-page {
+            padding-top: 20px;
+        }
     }
 
     &__content {
@@ -260,6 +268,16 @@ body {
         overflow: hidden;
         display: flex;
         gap: 20px;
+
+        &_doc-page {
+            width: 1118px;
+            overflow: inherit;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 44px;
+        }
     }
 
     &__case {

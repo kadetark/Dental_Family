@@ -76,6 +76,8 @@ body {
 .menu-link:hover, .menu-link_now {
   color: rgb(103, 173, 161);
   font-weight: 700;
+}
+.menu-link_now {
   position: relative;
 }
 .menu-link_now::after {
@@ -87,7 +89,6 @@ body {
   height: 4px;
   background-color: rgb(103, 173, 161);
   border-radius: 16px;
-  z-index: -1;
 }
 
 .top__button,
@@ -206,6 +207,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.doctors_doc-page {
+  height: 1507px;
+  background-image: url(img/doctors-background-doc-page.png);
+  background-size: cover;
+}
 .doctors__title {
   color: rgb(103, 173, 161);
   font-size: 36px;
@@ -214,6 +220,9 @@ body {
   text-align: left;
   padding-bottom: 24px;
   padding-top: 100px;
+}
+.doctors__title_doc-page {
+  padding-top: 20px;
 }
 .doctors__content {
   display: flex;
@@ -233,6 +242,16 @@ body {
   overflow: hidden;
   display: flex;
   gap: 20px;
+}
+.doctors__people_doc-page {
+  width: 1118px;
+  overflow: inherit;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 44px;
 }
 .doctors__case {
   width: 265px;
