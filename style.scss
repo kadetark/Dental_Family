@@ -120,6 +120,8 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-align: left;
+    border: none;
+    cursor: pointer;
 }
 
 .tags {
@@ -351,6 +353,9 @@ body {
         height: 52px;
         justify-content: center;
         align-items: center;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
     }
 }
 
@@ -880,5 +885,97 @@ body {
 
     &__img {
         border-radius: 16px;
+    }
+}
+
+.kids {
+    &-top {
+        width: 1123px;
+        height: 542px;
+        background-color: #F3F3F3;
+        display: flex;
+        gap: 25px;
+
+        &__left {
+            width: 738px;
+        }
+
+         &__right {
+            width: 360px;
+        }
+
+        &__title {
+            height: 50px;
+            color: var(--Brand, #67ADA1);
+            font-size: 36px;
+            font-weight: bold;
+            line-height: normal;
+            padding-bottom: 24px;
+        }
+
+        &__description {
+            width: 359px;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+            border-radius: 16px;
+            background: #F3F3F3;
+            box-shadow: 0 4px 4px 0 rgba(56, 56, 56, 0.25);
+
+            &_green {
+                background: linear-gradient(262deg, #7BC2B6 0%, #67ADA1 99.4%);
+            }
+
+            &-up {
+                width: 343px;
+                height: 74px;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-top: 12px;
+            }
+
+            &-title {
+                color: #67ADA1;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: normal;
+
+                &_green {
+                    color: #F3F3F3;
+                }
+            }
+
+            &-text {
+                width: 343px;
+                color: #67ADA1;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+
+                &_green {
+                    color: #F3F3F3;
+                }
+            }
+
+            &-box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                column-gap: 20px;
+                row-gap: 8px;
+            }
+        }
+
+        &__img {
+            &-shadow {
+                width: 340px;
+                height: 517px;
+                border-radius: 16px;
+                background: linear-gradient(262deg, #7BC2B6 0%, #67ADA1 99.4%);
+            }
+        }
     }
 }

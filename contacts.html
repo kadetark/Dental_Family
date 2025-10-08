@@ -1,21 +1,24 @@
  <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Дентал Фэмили  — стоматология для всей семьи</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дентал Фэмили — стоматология для всей семьи</title>
+    <meta name="description" content="Описание страницы">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
     <body>
         <header class="header center">
             <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>            
             <nav class="menu">
                 <a class="menu-link" href="index.html">Главная</a>
                 <a class="menu-link" href="service.html">Сервис</a>
-                <a class="menu-link" href="#">Детская стоматология</a>
+                <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
                 <a class="menu-link" href="doctors.html">Специалисты</a>
                 <a class="menu-link menu-link_now" href="contacts.html">Контакты</a>
                 <a class="menu-link" href="#">Вакансии</a>
@@ -24,7 +27,7 @@
         <div class="contacts center">
             <div class="contacts__title-box">
                 <h1 class="contacts__title">Свяжитесь с нами — мы всегда рядом, чтобы позаботиться о вашей улыбке!</h1>
-                <a class="contacts__button" href="#sign_up">Записаться <img src="img/button-footer.svg" alt="Кнопка записаться"></a>
+                <button class="contacts__button" onclick="document.location='#sign_up'">Записаться<img src="img/button-footer.svg" alt="Кнопка записаться"></button>
             </div>
             <div class="contacts__content">
                 <img class="contacts__map" src="img/map.jpg" alt="местоположение на карте">
@@ -96,7 +99,7 @@
                 <h2 class="feedback__title">Оставьте заявку — мы свяжемся с вами, подберём удобное время и ответим на все вопросы!</h2>
                 <form class="feedback__form" action="#" id="sign_up">
                     <p class="feedback__text-top">Записаться онлайн</p>
-                    <input class="feedback__input" type="name" placeholder="Имя">
+                    <input class="feedback__input" type="#" placeholder="Имя">
                     <input class="feedback__input" type="tel" name="tel" id="phone" placeholder="Телефон">
                     <p class="feedback__text-down">Заполняя форму, вы даёте согласие на обработку ваших персональных данных</p>
                     <button class="feedback__button">Записаться на приём</button>
@@ -109,31 +112,31 @@
         </div>
         <div class="padding"></div>
         <footer class="footer">
-            <div class="footer__content center">
-                <div class="footer__contacts-box">
-                    <div class="footer__contacts">
-                        <h2 class="footer__title">Контакты</h2>
-                        <div class="footer__address">
-                            <p class="footer__text">Адрес: г. Чита, ул. Новобульварная, д. 24</p>
-                            <p class="footer__text">Телефон: +7 (3022) 284-286</p>
-                            <p class="footer__text">График работы: ежедневно с 09:00 до 21:00</p>
-                        </div>
-                    </div>
-                    <div class="footer__sign-up">
-                        <a class="footer__button" href="#sign_up">Записаться <img src="img/button-footer.svg" alt="Кнопка записаться"></a>
-                        <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам и ответит на все интересующие вопросы.</p>
+        <div class="footer__content center">
+            <div class="footer__contacts-box">
+                <div class="footer__contacts">
+                    <h2 class="footer__title">Контакты</h2>
+                    <div class="footer__address">
+                        <p class="footer__text">Адрес: г. Чита, ул. Новобульварная, д. 24</p>
+                        <p class="footer__text">Телефон: +7 (3022) 284-286</p>
+                        <p class="footer__text">График работы: ежедневно с 09:00 до 21:00</p>
                     </div>
                 </div>
-                <div class="footer__name-clinic">
-                    <p class="footer__name-big">Дэнтал Фемили</p>
-                    <p class="footer__name-small">стоматология для всей семьи</p>
+                <div class="footer__sign-up">
+                    <button class="footer__button" onclick="document.location='#sign_up'">Записаться<img src="img/button-footer.svg" alt="Кнопка записаться"></button>    
+                    <p class="footer__text">Оставьте заявку, наш специалист перезвонит вам и ответит на все интересующие вопросы.</p>
                 </div>
             </div>
-            <nav class="footer__nav center">
-                <a class="footer__link" href="index.html">Главная</a>
-                <a class="footer__link" href="#">Детская стоматология</a>
-                <a class="footer__link" href="doctors.html">Специалисты</a>
-                <a class="footer__link" href="contacts.html">Контакты</a> 
-            </nav>
-        </footer>
+            <div class="footer__name-clinic">
+                <p class="footer__name-big">Дэнтал Фемили</p>
+                <p class="footer__name-small">стоматология для всей семьи</p>
+            </div>
+        </div>
+        <nav class="footer__nav center">
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="footer__link" href="doctors.html">Специалисты</a>
+            <a class="footer__link" href="contacts.html">Контакты</a>
+        </nav>
+    </footer>
     </body>    
