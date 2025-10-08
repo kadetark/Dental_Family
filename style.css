@@ -95,7 +95,7 @@ body {
   border-radius: 16px;
 }
 
-.top__button,
+.top__button, .service__button,
 .footer__button,
 .contacts__button {
   display: flex;
@@ -227,7 +227,7 @@ body {
   padding-top: 100px;
 }
 .doctors__title_doc-page {
-  padding-top: 20px;
+  padding-top: 0;
 }
 .doctors__content {
   display: flex;
@@ -641,7 +641,10 @@ body {
 
 .contacts {
   height: 550px;
-  background-color: #67ADA1;
+  background-image: url(img/doc-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contacts__title {
   width: 710px;
@@ -715,4 +718,57 @@ body {
 .contacts__svg-box {
   display: flex;
   gap: 4px;
+}
+
+.service {
+  height: 3519px;
+  background-color: #F3F3F3;
+  background-image: url(img/service-background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.service__title {
+  color: #67ADA1;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+.service__content {
+  width: 1122px;
+  height: 307px;
+  border-top: #67ADA1 1px solid;
+  padding-top: 24px;
+  display: flex;
+  gap: 23px;
+}
+.service__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service__content-left {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service__content-center {
+  width: 340px;
+}
+.service__name {
+  color: #67ADA1;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.service__list {
+  color: #67ADA1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.service__img {
+  border-radius: 16px;
 }/*# sourceMappingURL=style.css.map */

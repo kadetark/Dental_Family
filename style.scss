@@ -249,7 +249,7 @@ body {
         padding-top: 100px;
 
         &_doc-page {
-            padding-top: 20px;
+            padding-top: 0;
         }
     }
 
@@ -720,7 +720,10 @@ body {
 
 .contacts {
     height: 550px;
-    background-color: #67ADA1;
+    background-image: url(img/doc-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__title {
         width: 710px;
@@ -812,5 +815,70 @@ body {
             display: flex;
             gap: 4px;
         }
+    }
+}
+
+.service {
+    height: 3519px;
+    background-color: #F3F3F3;
+    background-image: url(img/service-background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+    &__title {
+        color: #67ADA1;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: normal;
+        padding-bottom: 24px;
+    }
+
+    &__content {
+        width: 1122px;
+        height: 307px;
+        border-top: #67ADA1 1px solid;
+        padding-top: 24px;
+        display: flex;
+        gap: 23px;
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-left {
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-center {
+            width: 340px;
+        }
+    }
+
+    &__name {
+        color: #67ADA1;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__button {
+        @extend .top__button
+    }
+
+    &__list {
+        color: #67ADA1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__img {
+        border-radius: 16px;
     }
 }
