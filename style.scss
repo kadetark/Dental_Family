@@ -1066,3 +1066,105 @@ body {
         right: 0px;
     }
 }
+
+.advantages {
+    height: 1084px;
+    // background: #F3F3F3;
+    background: 
+    url('img/adv-background.png') no-repeat top center/cover, 
+    #F3F3F3; 
+
+    &__title {
+        @extend .kids-top__title
+    }
+
+    &__title {
+        padding-top: 100px;
+        padding-bottom: 13px;
+    }
+
+    &__content {
+        &-box {
+            height: 821px;
+            display: flex;
+            flex-direction: column;
+            gap: 41px;
+        }
+
+        &-up {
+            height: 474px;
+            display: flex;
+            gap: 21px;
+        }
+
+        &-down {
+            height: 306px;
+            display: flex;
+            gap: 21px;
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+        }
+
+        &-right {
+            width: 454px;
+            height: 455px;
+            display: flex;
+            gap: 8px;
+            align-items: flex-end;
+        }
+    }
+
+    &__peculiarities {
+        display: flex;
+        gap: 12px; 
+        
+        &-text {
+            width: 579px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+        }
+    }
+
+    &__number {
+        color: #67ADA1;
+        font-size: 96px;
+        font-weight: bold;
+        line-height: normal; 
+        
+        &-box {
+            width: 54px;
+            height: 144px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__tags {
+        color: #67ADA1;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+
+        &-desc {
+            color: #67ADA1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    &__img {
+        border-radius: 16px;
+
+        &_small {
+            width: 230px;
+            height: 154px;
+        }
+    }
+}
