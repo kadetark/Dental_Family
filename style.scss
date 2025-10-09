@@ -892,7 +892,6 @@ body {
 
 .kids {
     &-top {
-        width: 1123px;
         height: 542px;
         background-color: #F3F3F3;
         display: flex;
@@ -1069,7 +1068,9 @@ body {
 
 .advantages {
     height: 1084px;
-    // background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
     background: 
     url('img/adv-background.png') no-repeat top center/cover, 
     #F3F3F3; 
@@ -1080,7 +1081,7 @@ body {
 
     &__title {
         padding-top: 100px;
-        padding-bottom: 13px;
+        padding-bottom: 0;
     }
 
     &__content {
@@ -1166,5 +1167,114 @@ body {
             width: 230px;
             height: 154px;
         }
+    }
+}
+
+.differences {
+    height: 962px;
+    background: 
+    url('img/dif-background.png') no-repeat top center/cover, 
+    linear-gradient(262deg, #7BC2B6 0%, #67ADA1 99.4%); 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+
+    &__title {
+        @extend .for-whom__title
+    }
+
+    &__title {
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        width: 360px;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+
+        &-box {
+            width: 930px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        &-up, &-down {
+            height: 570px;
+            display: flex;
+            gap: 210px;
+        }
+
+        &-down {
+            height: 202px;
+        }
+
+        &-text {
+            color: #F3F3F3;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    &__img {
+        border-radius: 16px;
+    }
+}
+
+.stages {
+    height: 1062px;
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    &__title {
+        @extend .advantages__title
+    }
+
+    &__content {
+        display: flex;
+        gap: 115px;
+        height: 240px;
+
+        &-box {
+            height: 784px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &-text {
+            width: 645px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+        }
+    }
+
+    &__tags {
+        color: #67ADA1;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+
+        &-desc {
+            color: #67ADA1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    &__img {
+        border-radius: 16px;
     }
 }
