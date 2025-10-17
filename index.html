@@ -27,12 +27,24 @@
                 <a class="menu-link" href="#">Вакансии</a>
             </nav>
         </header>
+        <header class="header header_mob header_mob-main">
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+            <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+            <nav class="menu menu_mob">
+                <a class="menu-link menu-link_now" href="index.html">Главная</a>
+                <a class="menu-link" href="service.html">Сервис</a>
+                <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+                <a class="menu-link" href="doctors.html">Специалисты</a>
+                <a class="menu-link" href="contacts.html">Контакты</a>
+                <a class="menu-link" href="#">Вакансии</a>
+            </nav>
+        </header>
         <section class="top__content">
             <div class="top__content-box">
                 <div class="top__left">
                     <h1 class="top__title">Дентал Фэмили — где лечатся всей семьёй</h1>
                     <p class="top__description">Заботимся о вашей улыбке с теплом и профессионализмом.</p>
-                    <button class="top__button" onclick="document.location='#sign_up'">Записаться<img src="img/button-top.svg" alt="Кнопка записаться"></button>
+                    <button class="top__button" onclick="document.location='#sign_up'">Записаться<img class="top__button-img" src="img/button-top.svg" alt="Кнопка записаться"></button>
                 </div>
                 <div class="top__right">
                     <img class="top__img" src="img/top_img.svg" alt="счастливая семья">
@@ -42,35 +54,48 @@
     </div>
     <div class="tags center">
         <h2 class="tags__title">Почему выбирают именно нас?</h2>
-        <div class="tags__content">
-            <img class="tags__img" src="img/tags1.svg" alt="картинка зуба">
-            <div class="tags__description">
-                <h3 class="tags__h3">Подход к каждому члену семьи</h3>
-                <p class="tags__text">Мы лечим и взрослых, и детей — от первых молочных зубов до сложной взрослой стоматологии. Учитываем возраст, страхи и индивидуальные особенности каждого пациента.</p>
+        <div class="tags__content-box">
+            <div class="tags__content">
+                <img class="tags__img" src="img/tags1.svg" alt="картинка зуба">
+                <div class="tags__description">
+                    <h3 class="tags__h3">Подход к каждому члену семьи</h3>
+                    <p class="tags__text">Мы лечим и взрослых, и детей — от первых молочных зубов до сложной взрослой стоматологии. Учитываем возраст, страхи и индивидуальные особенности каждого пациента.</p>
+                </div>
+            </div>    
+            <div class="tags__content">
+                <img class="tags__img" src="img/tags2.svg" alt="картинка зуба">
+                <div class="tags__description">
+                    <h3 class="tags__h3">Уютная атмосфера для всей семьи</h3>
+                    <p class="tags__text">Тёплый приём, приветливый персонал, чистота и детская игровая зона создают ощущение безопасности и заботы — даже у самых маленьких.</p>
+                </div>
             </div>
-            <img class="tags__img" src="img/tags2.svg" alt="картинка зуба">
-            <div class="tags__description">
-                <h3 class="tags__h3">Уютная атмосфера для всей семьи</h3>
-                <p class="tags__text">Тёплый приём, приветливый персонал, чистота и детская игровая зона создают ощущение безопасности и заботы — даже у самых маленьких.</p>
+        </div>    
+        <div class="tags__content-box">
+            <div class="tags__content">
+                <img class="tags__img" src="img/tags3.svg" alt="картинка зуба">
+                <div class="tags__description">
+                    <h3 class="tags__h3">Безболезненное и щадящее лечение</h3>
+                    <p class="tags__text">Современные обезболивающие, бережное обращение и передовые технологии позволяют лечить зубы максимально комфортно и без стресса.</p>
+                </div>
             </div>
-        </div>
-        <div class="tags__content">
-            <img class="tags__img" src="img/tags3.svg" alt="картинка зуба">
-            <div class="tags__description">
-                <h3 class="tags__h3">Безболезненное и щадящее лечение</h3>
-                <p class="tags__text">Современные обезболивающие, бережное обращение и передовые технологии позволяют лечить зубы максимально комфортно и без стресса.</p>
-            </div>
-            <img class="tags__img" src="img/tags4.svg" alt="картинка зуба">
-            <div class="tags__description">
-                <h3 class="tags__h3">Опытные и внимательные врачи</h3>
-                <p class="tags__text">В нашей команде — сертифицированные стоматологи с большим опытом работы. Они регулярно проходят обучение и находят подход к каждому пациенту.</p>
+            <div class="tags__content">
+                <img class="tags__img" src="img/tags4.svg" alt="картинка зуба">
+                <div class="tags__description">
+                    <h3 class="tags__h3">Опытные и внимательные врачи</h3>
+                    <p class="tags__text">В нашей команде — сертифицированные стоматологи с большим опытом работы. Они регулярно проходят обучение и находят подход к каждому пациенту.</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="about-us center">
+        <div class="about-us__img-mob">
+                <img class="about-us__img" src="img/about-us_img.jpg" alt="стоматологический кабинет">
+                <img class="about-us__points" src="img/about-us_points.svg" alt="точки">
+        </div>
         <h2 class="about-us__title">«Дентал-Фэмили» – стоматология для взрослых и детей</h2>
         <div class="about-us__content">
             <p class="about-us__text">«Дентал-Фэмили» в Чите оказывает широкий спектр услуг по диагностике и лечению заболеваний зубов, дёсен и полости рта. <br><br>Стоматология для всей семьи, ведется прием как детский так и взрослый . Есть все виды стоматологической помощи: детская стоматология, терапевтическая стоматология, хирургическая стоматология, ортопедическая стоматология, ортодонтическая стоматология. Рентген кабинет: КТ челюстей, ОПТГ, радиовизилграмма.<br><br>Мы создаём комфорт для каждого пациента — от уютной атмосферы до индивидуального подхода и внимательного отношения персонала. <br><br> «Дентал-Фэмили» — это место, где здоровье зубов и красивая улыбка становятся результатом доверия, профессионализма и заботы.</p>
+            <p class="about-us__text about-us__text_mob">«Дентал-Фэмили» в Чите оказывает широкий спектр услуг по диагностике и лечению заболеваний зубов, дёсен и полости рта. <br><br> У нас вы можете получить консультацию специалистов по самым востребованным и редким направлениям, пройти лечение в один визит. Мы заботимся о квалификации врачей, предоставляя им возможность обучения у ведущих экспертов в России и за рубежом. <br><br> Мы создаём комфорт для каждого пациента — от уютной атмосферы до индивидуального подхода и внимательного отношения персонала. <br><br> «Дентал-Фэмили» — это место, где здоровье зубов и красивая улыбка становятся результатом доверия, профессионализма и заботы.</p>
             <div class="about-us__img-box">
                 <img class="about-us__img" src="img/about-us_img.jpg" alt="стоматологический кабинет">
                 <img src="img/about-us_points.svg" alt="точки">
@@ -96,7 +121,7 @@
                     <img class="doctors__photo" src="img/doctors/batoina.jpg" alt="Батоина А. В.">
                     <div class="doctors__case-down">
                         <div class="doctors__name-box">
-                            <p class="doctors__name">Батоина <br> Анастасия Владиславовна</p>
+                            <p class="doctors__name">Батоина Анастасия Владиславовна</p>
                             <p class="doctors__speciality">Врач стоматолог<p>
                         </div>
                         <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на приём</button>
@@ -123,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <img class="doctors__slider" src="img/doc_slider-forward.png" alt="кнопка вперед">
+            <img class="doctors__slider doctors__slider_mob-main" src="img/doc_slider-forward.png" alt="кнопка вперед">
         </div>
     </div>
     <div class="sale">
@@ -218,6 +243,18 @@
             <a class="footer__link" href="contacts.html">Контакты</a>
         </nav>
     </footer>
+    <script>
+        function menu() {
+            const menuHeader = document.querySelector('.menu_mob');
+            if (!menuHeader) return;
+
+            if (menuHeader.style.display === 'none' || menuHeader.style.display === '' ) {
+                menuHeader.style.display = 'flex';
+            } else {
+                menuHeader.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>

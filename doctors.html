@@ -15,20 +15,33 @@
 </head>
 
 <body>
+    <header class="header center">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <nav class="menu">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link menu-link_now" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
+    <header class="header header_mob center">
+        <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
+        <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">
+        <nav class="menu menu_mob">
+            <a class="menu-link" href="index.html">Главная</a>
+            <a class="menu-link" href="service.html">Сервис</a>
+            <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+            <a class="menu-link menu-link_now" href="doctors.html">Специалисты</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+            <a class="menu-link" href="#">Вакансии</a>
+        </nav>
+    </header>
     <div class="doctors doctors_doc-page center">
-        <header class="header">
-            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
-            <nav class="menu">
-                <a class="menu-link" href="index.html">Главная</a>
-                <a class="menu-link" href="service.html">Сервис</a>
-                <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
-                <a class="menu-link menu-link_now" href="doctors.html">Специалисты</a>
-                <a class="menu-link" href="contacts.html">Контакты</a>
-                <a class="menu-link" href="#">Вакансии</a>
-            </nav>
-        </header>
         <h2 class="doctors__title doctors__title_doc-page">Специалисты</h2>
         <div class="doctors__people doctors__people_doc-page">
+            <img class="doctors__slider doctors__slider_doc-page doctors__slider_mob" src="img/doc_slider-back.png" alt="кнопка назад">
             <div class="doctors__case">
                 <img class="doctors__photo" src="img/doctors/lopatin.jpg" alt="Лопатин С.Б.">
                 <div class="doctors__case-down">
@@ -43,7 +56,7 @@
                 <img class="doctors__photo" src="img/doctors/batoina.jpg" alt="Батоина А. В.">
                 <div class="doctors__case-down">
                     <div class="doctors__name-box">
-                        <p class="doctors__name">Батоина <br> Анастасия Владиславовна</p>
+                        <p class="doctors__name">Батоина Анастасия Владиславовна</p>
                         <p class="doctors__speciality">Врач стоматолог<p>
                     </div>
                     <button class="doctors__button" onclick="document.location='#sign_up'">Записаться на приём</button>
@@ -139,4 +152,16 @@
             <a class="footer__link" href="contacts.html">Контакты</a>
         </nav>
     </footer>
+    <script>
+        function menu() {
+            const menuHeader = document.querySelector('.menu_mob');
+            if (!menuHeader) return;
+
+            if (menuHeader.style.display === 'none' || menuHeader.style.display === '' ) {
+                menuHeader.style.display = 'flex';
+            } else {
+                menuHeader.style.display = 'none';
+            }
+        }
+    </script>
 </body>

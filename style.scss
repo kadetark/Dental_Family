@@ -67,6 +67,14 @@ body {
     &_main {
         background: none;
     }
+
+    &_mob {
+        display: none;
+    }
+
+    &__menu-mob {
+        display: none;
+    }
 }
 
 .menu {
@@ -148,6 +156,11 @@ body {
         display: flex;
         flex-direction: row;
         gap: 20px;
+
+        &-box {
+            display: flex;
+            gap: 20px;
+        }
     }
 
     &__img {
@@ -212,6 +225,10 @@ body {
         font-weight: 400;
         line-height: 135%;
         text-align: left;
+
+        &_mob {
+            display: none;
+        }
     }
 
     &__img-box {
@@ -220,6 +237,10 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 16px;
+    }
+
+    &__img-mob {
+        display: none;
     }
 
     &__img {
@@ -235,8 +256,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    &_kids-page {
+        background-image: none;
+        background: none;
+    }
+
     &_doc-page {
-        height: 1507px;
+        height: 1378px;
         background-image: url(img/doctors-background-doc-page.png);
         background-size: cover;
     }
@@ -261,12 +287,16 @@ body {
         width: 1120px;
         justify-content: space-between;
         align-items: center;
-        gap: 47px;
+        gap: 37px;
     }
 
     &__slider {
         height: 47px;
         width: 47px;
+
+        &_doc-page {
+            display: none;
+        }
     }
 
     &__people {
@@ -275,6 +305,7 @@ body {
         overflow: hidden;
         display: flex;
         gap: 20px;
+        padding: 10px;
 
         &_doc-page {
             width: 1118px;
@@ -291,7 +322,7 @@ body {
         width: 265px;
         height: 538px;
         box-sizing: border-box;
-        border: 1px solid rgba(238, 238, 238, 1);
+        border: 1px solid #EEE;
         border-radius: 12px;
         box-shadow: 0px 4px 4px 0px rgba(56, 56, 56, 0.45);
         display: flex;
@@ -723,14 +754,23 @@ body {
 .padding {
     height: 100px;
     background: #F3F3F3;
+
+    &_back-none {
+        background: none;
+    }
+
+    &-only-mob {
+        display: none;
+    }
 }
 
 .contacts {
     height: 550px;
-    background-image: url(img/doc-background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('img/contacts-background.png') no-repeat center/cover, linear-gradient(262deg, #7BC2B6 0%, #67ADA1 99.4%);
+
+    &__header-box {
+        display: none;
+    }
 
     &__title {
         width: 710px;
@@ -749,6 +789,10 @@ body {
 
     &__button {
         @extend .footer__button;
+
+        &_mob {
+            display: none;
+        }
     }
 
     &__content {
@@ -875,7 +919,11 @@ body {
     }
 
     &__button {
-        @extend .top__button
+        @extend .top__button        
+    }
+
+    &__button_mob {
+        display: none;
     }
 
     &__list {
@@ -976,6 +1024,10 @@ body {
             z-index: 2;
             position: absolute;
 
+            &_mob {
+                display: none;
+            }
+
             &-shadow {
                 width: 340px;
                 height: 517px;
@@ -988,7 +1040,76 @@ body {
             }
         }
     }
-}
+
+    &-service {
+        height: 872px;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        &__title {
+            @extend .kids-top__title
+        }
+
+        &__title {
+            padding-bottom: 0;
+        }
+
+        &__content {
+            height: 262px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_green {
+                background: linear-gradient(259deg, rgba(200, 227, 223, 0.50) 0.07%, rgba(189, 206, 203, 0.50) 100.63%);
+            }
+
+            &-box {
+                overflow: clip;
+                width: 1122px;
+                height: 786px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                border-radius: 16px;
+                border: 1px solid #A8BAB7;
+            }
+
+            &-title {
+                color: #67ADA1;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: normal;
+                padding-top: 22px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            &-down {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 16px;
+                padding-bottom: 16px;
+                padding-right: 16px;
+            }
+
+            &-text {
+                color: #67ADA1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            }
+        }
+
+        &__img {
+            &_mob {
+                display: none;
+            }
+        }
+    }
+}   
 
 .for-whom {
     height: 540px;
@@ -1152,16 +1273,32 @@ body {
         font-weight: 700;
         line-height: normal;
 
+        &_mob {
+            display: none;
+        }
+
         &-desc {
             color: #67ADA1;
             font-size: 16px;
             font-weight: 400;
             line-height: 150%;
+
+            &-pc {
+                display: block;
+            }
+
+            &-mob {
+                display: none;
+            }
         }
     }
 
     &__img {
         border-radius: 16px;
+
+        &-mob {
+            display: none;
+        }
 
         &_small {
             width: 230px;
@@ -1187,6 +1324,10 @@ body {
     &__title {
         padding-bottom: 0;
         text-align: center;
+
+        &-mobbox {
+            display: none;
+        }
     }
 
     &__content {
@@ -1229,8 +1370,7 @@ body {
 }
 
 .stages {
-    height: 1062px;
-    background: #F3F3F3;
+    height: 1062px;     
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -1271,6 +1411,10 @@ body {
             font-size: 16px;
             font-weight: 400;
             line-height: 150%;
+
+            &_mob {
+                display: none;
+            }
         }
     }
 
@@ -1278,3 +1422,71 @@ body {
         border-radius: 16px;
     }
 }
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__title {
+        @extend .kids-service__title
+    }
+
+    &__content {
+        width: 920px;
+        height: 28px;
+        display: flex;
+        gap: 28px;
+        align-items: center;
+        margin-bottom: 11px;
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        &-case {
+            border-bottom: 1px solid #67ADA1;
+            padding-bottom: 16px;
+            position: relative;
+        }
+    }
+
+    &__number {
+        color: #67ADA1;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__faq {
+        color: #67ADA1;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: normal;
+    }
+
+    &__text {
+        min-height: 38px;
+        width: 920px;
+        line-height: 150%;
+        font-weight: 400;
+        @extend .question__faq
+        
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.background-group {
+    background: 
+    url('img/stage-background.png') no-repeat top center/cover, 
+    #F3F3F3;
+}
+
+@import 'mobile';

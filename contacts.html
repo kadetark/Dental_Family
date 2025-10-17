@@ -14,7 +14,7 @@
 </head>
     <body>
         <header class="header center">
-            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>            
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a> 
             <nav class="menu">
                 <a class="menu-link" href="index.html">Главная</a>
                 <a class="menu-link" href="service.html">Сервис</a>
@@ -25,6 +25,20 @@
             </nav>
         </header>
         <div class="contacts center">
+            <div class="contacts__header-box">
+                <header class="header header_mob header_mob-back-contacts">
+                    <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a> 
+                    <img class="header__menu-mob" src="img/mobil/menu_mob.svg" alt="меню" onclick="menu()">           
+                    <nav class="menu menu_mob">
+                        <a class="menu-link" href="index.html">Главная</a>
+                        <a class="menu-link" href="service.html">Сервис</a>
+                        <a class="menu-link" href="pediatric_dentistry.html">Детская стоматология</a>
+                        <a class="menu-link" href="doctors.html">Специалисты</a>
+                        <a class="menu-link menu-link_now" href="contacts.html">Контакты</a>
+                        <a class="menu-link" href="#">Вакансии</a>
+                    </nav>
+                </header>
+            </div>
             <div class="contacts__title-box">
                 <h1 class="contacts__title">Свяжитесь с нами — мы всегда рядом, чтобы позаботиться о вашей улыбке!</h1>
                 <button class="contacts__button" onclick="document.location='#sign_up'">Записаться<img src="img/button-footer.svg" alt="Кнопка записаться"></button>
@@ -35,14 +49,14 @@
                     <div class="contacts__info-case">
                         <div class="contacts__address">
                             <div class="contacts__block-name">
-                                <img src="img/img-address.svg" alt="значок геолокации">
+                                <img class="contacts__img" src="img/img-address.svg" alt="значок геолокации">
                                 <p class="contacts__name-title">Адрес</p>
                             </div>
                             <p class="contacts__name-text">г. Чита,  ул. Новобульварная, д.24</p>
                         </div>
                         <div class="contacts__address">
                             <div class="contacts__block-name">
-                                <img src="img/img-call.svg" alt="значок трубки">
+                                <img class="contacts__img" src="img/img-call.svg" alt="значок трубки">
                                 <p class="contacts__name-title">Телефон</p>
                             </div>
                             <p class="contacts__name-text">+7 (3022) 284-286</p>
@@ -51,24 +65,27 @@
                     <div class="contacts__info-case">
                         <div class="contacts__address">
                             <div class="contacts__block-name">
-                                <img src="img/img-mail.svg" alt="значок почты">
+                                <img class="contacts__img" src="img/img-mail.svg" alt="значок почты">
                                 <p class="contacts__name-title">E-mail</p>
                             </div>
                             <p class="contacts__name-text">dentalFam@mail.ru</p>
                         </div>
                         <div class="contacts__address contacts__address_big">
                             <div class="contacts__block-name">
-                                <img src="img/img-mess.svg" alt="значок чата">
+                                <img class="contacts__img" src="img/img-mess.svg" alt="значок чата">
                                 <p class="contacts__name-title">Соц.сети</p>
                             </div>
                             <div class="contacts__svg-box">
-                                <img class="contacts__svg" src="img/img-youtube.svg" alt="YouTube">
+                                <img class="contacts__svg" src="img/mobil/whatsapp.svg" alt="WhatsApp">
+                                <img class="contacts__svg" src="img/mobil/telegram.svg" alt="Telegram">
                                 <img class="contacts__svg" src="img/img-vk.svg" alt="VK">
+                                <img class="contacts__svg" src="img/img-youtube.svg" alt="YouTube">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button class="contacts__button contacts__button_mob" onclick="document.location='#sign_up'">Записаться<img src="img/button-footer.svg" alt="Кнопка записаться"></button>
         </div>
         <div class="padding"></div>
         <div class="sale">
@@ -139,4 +156,16 @@
             <a class="footer__link" href="contacts.html">Контакты</a>
         </nav>
     </footer>
+    <script>
+        function menu() {
+            const menuHeader = document.querySelector('.menu_mob');
+            if (!menuHeader) return;
+
+            if (menuHeader.style.display === 'none' || menuHeader.style.display === '' ) {
+                menuHeader.style.display = 'flex';
+            } else {
+                menuHeader.style.display = 'none';
+            }
+        }
+    </script>
     </body>    
