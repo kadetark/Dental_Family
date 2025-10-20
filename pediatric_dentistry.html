@@ -543,41 +543,47 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            const azotMenu = document.querySelector('.differences__content_left');
-            const sonMenu = document.querySelector('.differences__content_right');
-            const azotOn = document.querySelector('.differences__azot-on');
-            const azotOff = document.querySelector('.differences__azot-off');
-            const sonOn = document.querySelector('.differences__son-on');
-            const sonOff = document.querySelector('.differences__son-off');
+    // Проверка ширины экрана
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-            // Инициализация по умолчанию
-            toggleSection('azot');
+    if (!isMobile) return; // Выходим, если не мобильное устройство
 
-            // Обработчики событий
-            document.querySelectorAll('.js-azot').forEach(btn => {
-                btn.addEventListener('click', () => toggleSection('azot'));
-            });
+    const azotMenu = document.querySelector('.differences__content_left');
+    const sonMenu = document.querySelector('.differences__content_right');
+    const azotOn = document.querySelector('.differences__azot-on');
+    const azotOff = document.querySelector('.differences__azot-off');
+    const sonOn = document.querySelector('.differences__son-on');
+    const sonOff = document.querySelector('.differences__son-off');
 
-            document.querySelectorAll('.js-son').forEach(btn => {
-                btn.addEventListener('click', () => toggleSection('son'));
-            });
+    // Инициализация по умолчанию
+    toggleSection('azot');
 
-            // Функция переключения разделов
-            function toggleSection(activeSection) {
-                [azotMenu, sonMenu].forEach(el => el.style.display = 'none');
-                [azotOn, azotOff, sonOn, sonOff].forEach(el => el.style.display = 'none');
+    // Обработчики событий
+    document.querySelectorAll('.js-azot').forEach(btn => {
+        btn.addEventListener('click', () => toggleSection('azot'));
+    });
 
-                if (activeSection === 'azot') {
-                    azotMenu.style.display = 'flex';
-                    azotOn.style.display = 'flex';
-                    sonOff.style.display = 'flex';
-                } else if (activeSection === 'son') {
-                    sonMenu.style.display = 'flex';
-                    sonOn.style.display = 'flex';
-                    azotOff.style.display = 'flex';
-                }
-            }
-        });
+    document.querySelectorAll('.js-son').forEach(btn => {
+        btn.addEventListener('click', () => toggleSection('son'));
+    });
+
+    // Функция переключения разделов
+    function toggleSection(activeSection) {
+        [azotMenu, sonMenu].forEach(el => el.style.display = 'none');
+        [azotOn, azotOff, sonOn, sonOff].forEach(el => el.style.display = 'none');
+
+        if (activeSection === 'azot') {
+            azotMenu.style.display = 'flex';
+            azotOn.style.display = 'flex';
+            sonOff.style.display = 'flex';
+        } else if (activeSection === 'son') {
+            sonMenu.style.display = 'flex';
+            sonOn.style.display = 'flex';
+            azotOff.style.display = 'flex';
+        }
+    }
+});
+
 
     </script>
 </body>
