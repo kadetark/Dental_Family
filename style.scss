@@ -233,6 +233,7 @@ body {
 
     &__img-box {
         width: 550px;
+        height: 397px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -245,7 +246,36 @@ body {
 
     &__img {
         border-radius: 12px;
+        width: 100%;
     }
+
+    &__carousel {
+        position: relative;
+        overflow: hidden;
+
+        &-img {
+            display: flex;
+        }
+
+        &-dots {
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            gap: 6px;
+            height: 15px;
+            align-items: center;
+        }
+    }
+
+    &__dot {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        background-color: #F3F3F3;
+        border-radius: 50%;
+        cursor: pointer;        
+    }   
 }
 
 .doctors {
@@ -403,6 +433,7 @@ body {
         height: 524px;
         width: 1440px;
         display: flex;
+        position: relative;
     }
 
     &__img-box {
@@ -415,9 +446,16 @@ body {
     }
 
     &__content {
-        width: 916px;
-        padding: 0px 24px 0px 48px;
-        position: relative;
+        flex-shrink: 0;
+        width: 100%;
+
+        &-box {
+            width: 916px;
+            padding: 0px 24px 0px 48px;
+            display: flex;
+            overflow-x: hidden;
+            gap: 100px;
+        }        
     }
 
     &__title,
@@ -446,6 +484,10 @@ body {
         position: absolute;
         right: 24px;
         top: 50%;
+    }
+
+    &__dots {
+        display: none;
     }
 }
 
@@ -1489,4 +1531,10 @@ body {
     #F3F3F3;
 }
 
+ .activedot {
+    height: 15px;
+    width: 15px;
+}
+
 @import 'mobile';
+@import 'tablet';
