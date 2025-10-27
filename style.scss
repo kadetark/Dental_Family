@@ -1220,6 +1220,10 @@ body {
                 width: 448px;
             }
         }
+
+        &__dots {
+            display: none;
+        }
     }
 
     &__img {

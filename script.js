@@ -319,6 +319,70 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('resize', activateMobileCarousel);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Функция для инициализации карусели
+    function initForWhomCarousel(container) {
+        const slides = container.querySelectorAll('.for-whom__content');
+        const dotsContainer = container.querySelector('.for-whom__dots');
+        const dots = dotsContainer ? dotsContainer.querySelectorAll('.for-whom__dot') : [];
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            // Ограничиваем индекс диапазоном [0, slides.length - 1]
+            index = Math.max(0, Math.min(index, slides.length - 1));
+
+            // Скрываем все слайды
+            slides.forEach(slide => slide.style.display = 'none');
+
+            // Показываем текущий слайд
+            if (slides[index]) {
+                slides[index].style.display = 'block';
+                console.log(`Показан слайд ${index}`);
+            } else {
+                console.warn(`Слайд с индексом ${index} не существует!`);
+            }
+
+            // Удаляем активный класс у всех точек
+            dots.forEach(dot => dot.classList.remove('activedot'));
+
+            // Добавляем активный класс к текущей точке
+            if (dots[index]) {
+                dots[index].classList.add('activedot');
+                console.log(`Активная точка: ${index}`);
+            } else {
+                console.warn(`Точка с индексом ${index} не существует!`);
+            }
+        }
+
+        // Обработчики для точек
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+                console.log(`Нажата точка ${index}`); // Лог для диагностики
+            });
+        });
+
+        // Инициализация: показываем первый слайд
+        showSlide(currentSlide);
+    }
+
+    // Определяем контейнер карусели
+    const forWhomCarousel = document.querySelector('.for-whom__content-box'); // 
+
+    // Функция для активации карусели на мобильных устройствах
+    function activateMobileCarousel() {
+        if (window.innerWidth <= 768 && forWhomCarousel) {
+            initForWhomCarousel(forWhomCarousel);
+        }
+    }
+
+    // Инициализация при загрузке и изменении размера экрана
+    activateMobileCarousel();
+    window.addEventListener('resize', activateMobileCarousel);
+});
+
 
 
 
