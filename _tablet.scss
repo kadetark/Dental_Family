@@ -18,7 +18,7 @@
         gap: 14px;
 
         &-link {
-            font-size: 14px;
+            font-size: 13.5px;
         }
     }
 
@@ -225,6 +225,83 @@
             }
         }
     }
+
+    .kids {
+        &-top {
+            height: 1100px;
+            flex-direction: column;
+            gap: 35px;
+
+            &__description-box {
+                column-gap: 0;
+            }
+
+            &__right {
+                display: flex;
+                justify-content: center;
+                width: auto;
+            }
+
+            &__img {
+                position: inherit;
+
+                &-shadow {
+                    height: 510px;
+                    bottom: -24px;
+                    right: 163px;
+                }
+            }
+        }
+    }
+
+    .for-whom {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            width: 550px;
+
+            &-box {
+                height: auto;
+            }
+
+            &-up, &-down {
+                flex-direction: column;
+                gap: 27px;
+            }
+
+            &-text, &-title {
+                width: 448px;
+            }
+        }
+    }
+
+    .advantages {
+        height: auto;
+
+        &__title {
+            padding-top: 50px;
+        }
+
+        &__img_small {
+        display: none;
+        }
+
+        &__peculiarities-text {
+            width: 422px;
+        }
+
+        &__content-down img {
+            width: 70%;
+            height: 70%;
+        }
+    }        
 }
 
 @media (min-width: 1023px) and (max-width: 1170px) {
@@ -363,4 +440,65 @@
             }
         }
     }
+
+    .kids-top {
+        align-items: center;
+
+        &__description-box{
+            column-gap: 20px;
+        }
+
+        &__img-shadow {
+            right: -30px;
+        }
+    }
+
+    .for-whom {
+        &__title {
+            text-align: left;
+        }
+
+        &__content {
+            width: 315px;
+            height: 190px;
+
+            &-up, &-down {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            &-text, &-title {
+                width: 250px;
+            }
+
+            &_big {
+                width: 482px;
+            }
+
+            &-text_big, &-title_big {
+                width: 350px;
+            }
+        }
+    }
+
+    .advantages {
+        padding-bottom: 50px;
+
+        &__title {
+            padding-top: 50px;
+        }
+
+        &__img_small {
+        display: none;
+        }
+
+        &__peculiarities-text {
+            width: 579px;
+        }
+
+        &__content-down img {
+            width: 100%;
+            height: 100%;
+        }
+    }  
 }

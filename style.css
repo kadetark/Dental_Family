@@ -2365,7 +2365,7 @@ body {
     gap: 14px;
   }
   .menu-link {
-    font-size: 14px;
+    font-size: 13.5px;
   }
   .top__content-box {
     width: auto;
@@ -2520,6 +2520,66 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .kids-top {
+    height: 1100px;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .kids-top__description-box {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .kids-top__right {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .kids-top__img {
+    position: inherit;
+  }
+  .kids-top__img-shadow {
+    height: 510px;
+    bottom: -24px;
+    right: 163px;
+  }
+  .for-whom {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .for-whom__title, .differences__title {
+    text-align: center;
+  }
+  .for-whom__content {
+    width: 550px;
+  }
+  .for-whom__content-box {
+    height: auto;
+  }
+  .for-whom__content-up, .for-whom__content-down {
+    flex-direction: column;
+    gap: 27px;
+  }
+  .for-whom__content-text, .for-whom__content-title {
+    width: 448px;
+  }
+  .advantages {
+    height: auto;
+  }
+  .advantages__title, .stages__title {
+    padding-top: 50px;
+  }
+  .advantages__img_small {
+    display: none;
+  }
+  .advantages__peculiarities-text {
+    width: 422px;
+  }
+  .advantages__content-down img {
+    width: 70%;
+    height: 70%;
+  }
 }
 @media (min-width: 1023px) and (max-width: 1170px) {
   .center {
@@ -2624,5 +2684,51 @@ body {
   }
   .service__button_mob {
     display: none;
+  }
+  .kids-top {
+    align-items: center;
+  }
+  .kids-top__description-box {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .kids-top__img-shadow {
+    right: -30px;
+  }
+  .for-whom__title, .differences__title {
+    text-align: left;
+  }
+  .for-whom__content {
+    width: 315px;
+    height: 190px;
+  }
+  .for-whom__content-up, .for-whom__content-down {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .for-whom__content-text, .for-whom__content-title {
+    width: 250px;
+  }
+  .for-whom__content_big {
+    width: 482px;
+  }
+  .for-whom__content-text_big, .for-whom__content-title_big {
+    width: 350px;
+  }
+  .advantages {
+    padding-bottom: 50px;
+  }
+  .advantages__title, .stages__title {
+    padding-top: 50px;
+  }
+  .advantages__img_small {
+    display: none;
+  }
+  .advantages__peculiarities-text {
+    width: 579px;
+  }
+  .advantages__content-down img {
+    width: 100%;
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
