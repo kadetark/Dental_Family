@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1170px) {
+@media (min-width: 700px) and (max-width: 1170px) {
     .center {
         padding-left: calc(50% - 360px);
         padding-right: calc(50% - 360px);
@@ -96,6 +96,14 @@
             width: auto;
             gap: 30px;
         }
+
+        &__slider_doc-page {
+            display: block;
+        }
+
+        &__people_doc-page {
+            overflow: hidden;
+        }
     }
 
     .sale {
@@ -104,12 +112,13 @@
         }
 
         &__content {
-            width: auto;    
+            width: inherit;    
             padding: 0px 100px 0px 100px;
         }
 
         &__svg {
             top: 44%;
+            right: 120px;
         }
     }
 
@@ -155,6 +164,67 @@
             width: 516px;
         }
     }
+
+    .footer {
+        &__name-big {
+            font-size: 100px;
+        }
+
+        &__name-small {
+            left: 15%;
+            bottom: 25px;
+        }
+    }
+
+    .contacts {
+        height: auto;
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__button {
+            gap: 5px;
+            padding: 5px;
+        }
+
+        &__map {
+            width: fit-content;
+        }
+
+        &__content {
+            width: auto;
+            flex-direction: column;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+    }
+
+    .padding {
+        height: 50px;
+    }
+
+    .service {
+        height: 5200px;
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: auto;  
+            height: 527px;   
+        }
+
+        &__button {
+            display: none;
+
+            &_mob {
+                display: flex;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1023px) and (max-width: 1170px) {
@@ -186,12 +256,34 @@
     }
     
     .sale {
+        justify-content: flex-start;
+
         &__img-box {
             display: block;
         }
 
         &__content {
-            padding: 0px 85px 0px 48px;
+            padding: 0px 85px 0px 10px;
+
+            &-box {
+                padding: 0;
+            }
+        }
+
+        &__title {
+            margin-top: 110px;
+        }
+
+        &__description {
+            width: 410px;
+        }
+
+        &__condition {
+            width: 410px;
+        }
+
+        &__svg {
+            right: 432px;
         }
     }
 
@@ -205,6 +297,7 @@
         
         &__title {
             width: 600px;
+            padding-left: 10px;
         }
 
         &__content {
@@ -218,6 +311,16 @@
             position: absolute;
             bottom: 0;
             right: 0;
+        }
+
+        &__form {
+            width: 530px;
+            margin-left: 10px;
+        }
+
+        &__input, &__button {
+            padding-right: 12px;
+            width: 500px;
         }
     }
 
@@ -237,6 +340,27 @@
 
         &__date {
             bottom: 20px;
+        }
+    }
+
+    .footer__name-small {
+        left: 21%;
+    }
+
+    .service {
+        height: 3246px;
+
+        &__content {
+            display: flex;
+            height: 307px;
+        }
+
+        &__button {
+            display: flex;
+
+            &_mob {
+                display: none;
+            }
         }
     }
 }

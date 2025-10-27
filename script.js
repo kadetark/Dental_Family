@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("DOMContentLoaded", () => {
     // Проверка ширины экрана
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        const isMobile = window.matchMedia("(max-width: 700px)").matches;
 
         if (!isMobile) return; // Выходим, если не мобильное устройство
 
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileCarousel = document.querySelector('.about-us__img-mob.about-us__carousel');
 
     function checkActiveCarousel() {
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= 700;
 
         // Скрываем все карусели
         if (desktopCarousel) desktopCarousel.style.display = 'none';
@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Функция для активации карусели на мобильных устройствах
     function activateMobileCarousel() {
-        if (window.innerWidth <= 768 && saleCarousel) {
+        if (window.innerWidth <= 700 && saleCarousel) {
             initSaleCarousel(saleCarousel);
         }
     }
@@ -373,7 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Функция для активации карусели на мобильных устройствах
     function activateMobileCarousel() {
-        if (window.innerWidth <= 768 && forWhomCarousel) {
+        if (window.innerWidth <= 700 && forWhomCarousel) {
             initForWhomCarousel(forWhomCarousel);
         }
     }
