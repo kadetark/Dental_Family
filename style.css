@@ -2542,6 +2542,24 @@ body {
     bottom: -24px;
     right: 163px;
   }
+  .kids-service {
+    height: auto;
+  }
+  .kids-service__content-box {
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(3, 240px);
+  }
+  .kids-service__content {
+    width: 240px;
+    height: 168px;
+  }
+  .kids-service__content-title {
+    font-size: 21px;
+  }
+  .kids-service__img {
+    width: 240px;
+  }
   .for-whom {
     height: auto;
     display: flex;
@@ -2579,6 +2597,35 @@ body {
   .advantages__content-down img {
     width: 70%;
     height: 70%;
+  }
+  .differences {
+    padding-bottom: 40px;
+  }
+  .differences__content-box {
+    width: auto;
+  }
+  .differences__content-up, .differences__content-down {
+    gap: 28px;
+    justify-content: center;
+  }
+  .stages {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .stages__content {
+    height: auto;
+    gap: 20px;
+    align-items: center;
+  }
+  .stages__content-box {
+    height: auto;
+  }
+  .stages__img {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .question__content, .question__text {
+    width: 650px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1170px) {
@@ -2664,7 +2711,7 @@ body {
     gap: 30px;
   }
   .reviews__case {
-    width: auto;
+    width: 340px;
   }
   .reviews__date {
     bottom: 20px;
@@ -2730,5 +2777,27 @@ body {
   .advantages__content-down img {
     width: 100%;
     height: 100%;
+  }
+  .differences__title {
+    text-align: center;
+  }
+  .differences__content-up, .differences__content-down {
+    gap: 60px;
+  }
+  .kids-service__content-box {
+    grid-template-columns: repeat(3, 300px);
+  }
+  .kids-service__content {
+    width: 300px;
+    height: 210px;
+  }
+  .kids-service__content-title {
+    font-size: 22px;
+  }
+  .kids-service__img {
+    width: 300px;
+  }
+  .question__content, .question__text {
+    width: 830px;
   }
 }/*# sourceMappingURL=style.css.map */
