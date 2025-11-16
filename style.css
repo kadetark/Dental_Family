@@ -261,7 +261,7 @@ body {
   background: none;
 }
 .doctors_doc-page {
-  height: 1378px;
+  height: auto;
   background-image: url(img/doctors-background-doc-page.png);
   background-size: cover;
 }
@@ -279,11 +279,11 @@ body {
 }
 .doctors__content {
   display: flex;
-  height: 558px;
   width: 1120px;
   justify-content: space-between;
   align-items: center;
   gap: 37px;
+  padding-bottom: 164px;
 }
 .doctors__slider {
   height: 47px;
@@ -294,7 +294,6 @@ body {
 }
 .doctors__people {
   width: 932px;
-  height: 558px;
   overflow: hidden;
   display: flex;
   gap: 20px;
@@ -2426,6 +2425,7 @@ body {
   }
   .doctors__people_doc-page {
     overflow: hidden;
+    height: 558px;
   }
   .sale__img-box {
     display: none;
