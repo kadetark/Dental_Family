@@ -280,6 +280,10 @@
         &__name {
             font-size: 17px;
 
+            &_long {
+                font-size: 15px;
+            }
+
             &-box {
                 gap: 2px;
             }
